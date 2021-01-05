@@ -1,8 +1,8 @@
 //Action creator ( with named export {}, instead of default)
-export const firstAction = (song) => {
+export const selectSong = (song) => {
   //Return an action object with type and payload
   return {
-    type: "SELECT_SONG",
+    type: "SONG_SELECTED",
     payload: song
   };
 };
