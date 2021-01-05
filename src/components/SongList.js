@@ -30,8 +30,9 @@ class SongList extends Component {
 
 // Basically it takes data from Redux Store and puts it as this.state.songs :)
 const mapStateToProps = (state) => {
-  console.log(state);
+  //console.log(state);
   return { songs: state.songs };
 };
 
+// Connect function will call action creator, pass action and use store.dispatch for us
 export default connect(mapStateToProps, { selectSong })(SongList);
